@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/woman-up/static/css/main.93abb0f8.chunk.css",
-    "main.js": "/woman-up/static/js/main.7c26ea64.chunk.js",
-    "main.js.map": "/woman-up/static/js/main.7c26ea64.chunk.js.map",
+    "main.css": "/woman-up/static/css/main.0cbdd179.chunk.css",
+    "main.js": "/woman-up/static/js/main.6b63a2b0.chunk.js",
+    "main.js.map": "/woman-up/static/js/main.6b63a2b0.chunk.js.map",
     "runtime-main.js": "/woman-up/static/js/runtime-main.b400b874.js",
     "runtime-main.js.map": "/woman-up/static/js/runtime-main.b400b874.js.map",
-    "static/js/2.52c8e58e.chunk.js": "/woman-up/static/js/2.52c8e58e.chunk.js",
-    "static/js/2.52c8e58e.chunk.js.map": "/woman-up/static/js/2.52c8e58e.chunk.js.map",
+    "static/js/2.d66a1e27.chunk.js": "/woman-up/static/js/2.d66a1e27.chunk.js",
+    "static/js/2.d66a1e27.chunk.js.map": "/woman-up/static/js/2.d66a1e27.chunk.js.map",
     "static/js/3.350e5608.chunk.js": "/woman-up/static/js/3.350e5608.chunk.js",
     "static/js/3.350e5608.chunk.js.map": "/woman-up/static/js/3.350e5608.chunk.js.map",
     "index.html": "/woman-up/index.html",
-    "static/css/main.93abb0f8.chunk.css.map": "/woman-up/static/css/main.93abb0f8.chunk.css.map",
-    "static/js/2.52c8e58e.chunk.js.LICENSE.txt": "/woman-up/static/js/2.52c8e58e.chunk.js.LICENSE.txt"
+    "static/css/main.0cbdd179.chunk.css.map": "/woman-up/static/css/main.0cbdd179.chunk.css.map",
+    "static/js/2.d66a1e27.chunk.js.LICENSE.txt": "/woman-up/static/js/2.d66a1e27.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b400b874.js",
-    "static/js/2.52c8e58e.chunk.js",
-    "static/css/main.93abb0f8.chunk.css",
-    "static/js/main.7c26ea64.chunk.js"
+    "static/js/2.d66a1e27.chunk.js",
+    "static/css/main.0cbdd179.chunk.css",
+    "static/js/main.6b63a2b0.chunk.js"
   ]
 }
