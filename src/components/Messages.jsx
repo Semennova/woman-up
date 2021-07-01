@@ -7,7 +7,7 @@ export const Messages = ({messages, deleteMessage}) => {
                 <div>
                     <div>{messages.map(m => (
                         <div key={m.id}>
-                        <div className='messageItem'>{m.text} </div>
+                        <div className='messageItem'><strong></strong><i>{m.text}</i></div>
                         <button onClick={()=>deleteMessage(m.id)} className='deleteBtn'>X</button>
                            
                     </div>

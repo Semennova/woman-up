@@ -6,13 +6,18 @@ import firebase from "firebase/app";
 
 
 function App() {
+
   const db = firebase.firestore();
 
   let [message, setMessage] = useState({
+    date: '',
     text: ''
   });
   const [messages, setMessages] = useState([]);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+  /**
+   * Функция получает объект документов (snapshot) из firestore. Преобразует объект snapshot в массив, сортирует его в порядке убывания, устанавливает массив messages.
+   */
 
   useEffect(()=>{
     (async()=> {
@@ -24,46 +29,58 @@ function App() {
           ...doc.data()
         })
       })
-   
+      messagesArr.sort((a,b) => {
+        return b.date - a.date
+      })
       setMessages(messagesArr)
     })()
   }, [])
 
+  /**
+   * Функция устанавливет ключ объекта message (message = {date:'', text:'вводимые в input данные'}) 
+   * @param {string} e  параметр event
+   * @returns {string} возвращает значение ключа text объекта message
+   */
+
 
   const onChange = (e)=> {
     setMessage({
+      ...message,
       text: e.target.value
     })
   }
+  /**
+   * Функция добавляет сообщение в UI и в firestore; устанавливет ключ date объекта message, для сортировки объектов в порядке их добавления в дальнейшем; зачищает input.
+   */
 
-  const onSubmit = async () => {
+  const addMessage = async () => {
     setLoading(true)
     const newMessage = await db.collection('messages').add({
-      ...message
+      ...message,
+        date: new Date().getTime()
     });
-   
-    setMessages([...messages, message]);
+ 
+    setMessages([message, ...messages]);
     setMessage({
       text: ''
     });  
 
     setLoading(false)
   }
-
-  const deleteMsgFromUI = (id) => {
-    setMessages(messages.filter(message => message.id !== id))
-  }
-
-
+  /**
+   * Функция удаляет сообщение из UI и из firestore.
+   * @param {string} id параметр берется из объекта doc, коллекции firestore.
+   * 
+   */
 
   const deleteMessage = async (id) => {
     await db.collection('messages').doc(id).delete();
-    deleteMsgFromUI(id)
+    setMessages(messages.filter(message => message.id !== id))
   }
 
   return (
     <div className='container'>
-        <SubmitMessageForm onChange={onChange} message={message} onSubmit={onSubmit} loading={loading}/>
+        <SubmitMessageForm onChange={onChange} message={message} addMessage={addMessage} loading={loading}/>
         <Messages messages={messages} deleteMessage={deleteMessage}/>
     </div>
   );

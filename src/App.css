@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+
 body{
-  background: cornflowerblue;
+  background: #ECF3FB;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -18,9 +22,12 @@ input{
 
 .sendButton{
   padding: 10px;
-  margin-left: auto;
+  margin-left: 2px;
   border-radius: 3px;
-
+  background: #0080FF;
+  color: #fff;
+  border: #0080FF 2px solid;
+  font-weight: bold;
 }
 
 h5{
@@ -33,11 +40,15 @@ h5{
   border: 1px solid #ccc;
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 20px;
   text-align: start;
-  background: lightblue;
+  background: #0080FF;
+  color: #fff
 }
 
 .deleteBtn{
-  border-radius: 3px;
+  border-radius: 50%;
+  background: #FF3E59;
+  color: #fff;
+  border: none
 }
