@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/woman-up/static/css/main.0cbdd179.chunk.css",
-    "main.js": "/woman-up/static/js/main.6b63a2b0.chunk.js",
-    "main.js.map": "/woman-up/static/js/main.6b63a2b0.chunk.js.map",
+    "main.js": "/woman-up/static/js/main.bc2514bb.chunk.js",
+    "main.js.map": "/woman-up/static/js/main.bc2514bb.chunk.js.map",
     "runtime-main.js": "/woman-up/static/js/runtime-main.b400b874.js",
     "runtime-main.js.map": "/woman-up/static/js/runtime-main.b400b874.js.map",
     "static/js/2.d66a1e27.chunk.js": "/woman-up/static/js/2.d66a1e27.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b400b874.js",
     "static/js/2.d66a1e27.chunk.js",
     "static/css/main.0cbdd179.chunk.css",
-    "static/js/main.6b63a2b0.chunk.js"
+    "static/js/main.bc2514bb.chunk.js"
   ]
 }
